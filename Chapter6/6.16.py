@@ -4,29 +4,21 @@ print('학생 정보 : ', student_dict)
 
 while True:
 
-    for i in student_dict:
-        grade = input("학번을 입력하세요 : ")
-        if grade == i:
-            print('{}번 학생은 {}입니다.'.format(i, student_dict[i]))
-            print("1번 문장")
-            continue
+    grade = int(input("학번을 입력하세요 : "))
 
-        elif int(grade) < 1:
-            print("프로그램을 종료합니다.")
-            quit()
+    if grade == 191101:
+        print('191101번 학생은 홍길동입니다.')
 
-            """2번 문장과 3번 문장에 도달하지 못함"""
-        else:
-            i = int(i) + 1
-            if grade == i:
-                print('{}번 학생은 {}입니다.'.format(i + 1, student_dict[i + 1]))
-                print("2번 문장")
-            else:
-                i = int(i) + 1
-                if grade == i:
-                    print('{}번 학생은 {}입니다.'.format(i + 1, student_dict[i + 1]))
-                    print("3번 문장")
-                else:
-                    print("해당 학번의 학생이 없습니다.")
+    elif grade == 191102:
+        print('191102번 학생은 임꺽정입니다.')
 
-    break
+    elif grade == 191103:
+        print('191103번 학생은 장길산입니다.')
+
+    elif grade < 1:
+        print("프로그램을 종료합니다.")
+        break
+
+    else:
+        print("해당 학번의 학생이 없습니다.")
+
