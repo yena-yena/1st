@@ -3,30 +3,28 @@ student_dict = { num:name for num, name, tel in student_tuple }
 print('학생 정보 : ', student_dict)
 
 while True:
+    grade = input("학번을 입력하세요 : ")
 
-    for i in student_dict:
-        grade = input("학번을 입력하세요 : ")
-        if grade == i:
-            print('{}번 학생은 {}입니다.'.format(i, student_dict[i]))
-            print("1번 문장")
-            continue
+    if grade == student_dict:
+        print('{}번 학생은 입니다.'.format(student_dict))
 
-        elif int(grade) < 1:
+
+"""        elif int(grade) < 1:
             print("프로그램을 종료합니다.")
-            quit()
+            break
 
-            """2번 문장과 3번 문장에 도달하지 못함"""
         else:
-            i = int(i) + 1
+            i = int(i) + 1 #191102가 입력된 경우. . ..
             if grade == i:
                 print('{}번 학생은 {}입니다.'.format(i + 1, student_dict[i + 1]))
-                print("2번 문장")
+
+
             else:
-                i = int(i) + 1
+                i = int(i) + 1 #191103이 입력된 경우. . ..
                 if grade == i:
                     print('{}번 학생은 {}입니다.'.format(i + 1, student_dict[i + 1]))
-                    print("3번 문장")
+
                 else:
                     print("해당 학번의 학생이 없습니다.")
-
-    break
+                    print("??")
+"""
