@@ -48,6 +48,6 @@ elif com == '보':
         print("컴퓨터 : {}".format(com))
         print("이겼습니다")
     elif user == '보':
-        print("비겼습니다")
         print("플레이어 : {}".format(user))
         print("컴퓨터 : {}".format(com))
+        print("비겼습니다")
