@@ -66,7 +66,7 @@ class TV:
 
 
 my_tv = TV(5, 0, False)
-#print(my_tv)
+print(my_tv)
 #my_tv.toggle_power()
 #print(my_tv)
 #my_tv.set_channel(45)
