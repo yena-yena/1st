@@ -9,13 +9,13 @@ class TV:
         self.__channel = __channel
         self.__is_on = __is_on
 
-        __volume = 5
-        __channel = 0
-        __is_on = False
+        # __volume = 5
+        # __channel = 0
+        # __is_on = False
 
 
     def __str__(self):
-        return "볼륨 : ".format(self.__volume), ", 채널 : ".format(self.__channel)
+        return '볼륨 : {}'.format(self.__volume), ', 채널 : {}'.format(self.__channel)
 
     def toggle_power(self):
         if self.__is_on == True:
@@ -32,7 +32,7 @@ class TV:
             self.__channel = int(input("채널을 입력하세요 : "))
             return self.__channel
         except:
-            if self.__channel > 201 and self.__channel < 0:
+            if self.__channel > 200 and self.__channel < 0:
                 print("채널 오류")
 
     def get_volume(self):
@@ -43,7 +43,7 @@ class TV:
             self.__volume = int(input("볼륨을 입력하세요 : "))
             return self.__volume
         except:
-            if self.__volume > 201 and self.__volume < 0:
+            if self.__volume > 200 and self.__volume < 0:
                 print("볼륨 오류")
 
     def volume_up(self):
@@ -56,7 +56,7 @@ class TV:
 
     def channel_up(self):
         self.__channel = self.__channel + 1
-        if self.__channel >= 201:
+        if self.__channel >= 200:
             self.__channel = self.MIN_VOLUME
 
     def channel_down(self):
